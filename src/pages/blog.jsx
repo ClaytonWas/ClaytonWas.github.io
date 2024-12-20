@@ -4,9 +4,8 @@ import NavBar from '../components/NavBar';
 import BlogPostCard from '../components/BlogPostCard';
 
 const Board = () => (
-    <div className="bg-gray-200 min-h-screen flex flex-col">
+    <div className="flex flex-col">
         <div className="flex flex-grow flex-col justify-center items-center">
-            
             {BlogPosts.map(blogpost => (
                 <BlogPostCard key={blogpost.id}
                     id={blogpost.id}
