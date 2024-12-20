@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/old-path': {
-        target: 'http://wasmund.ca', // Your destination URL
+        target: 'https://wasmund.ca', // Your destination URL
         rewrite: (path) => path.replace(/^\/old-path/, '/new-path'),
       },
     },
