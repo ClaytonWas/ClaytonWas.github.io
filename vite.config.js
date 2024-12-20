@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,7 +13,14 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/old-path/, '/new-path'),
       },
     },
-    // This ensures that Vite handles 404 routes properly and falls back to index.html
-    historyApiFallback: true,
+    // Manually configure fallback to index.html for routes
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (!req.url.includes('.') && !req.url.startsWith('/api')) {
+          req.url = '/'; // Redirect all non-file requests to the root
+        }
+        next();
+      });
+    },
   },
 });
