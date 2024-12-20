@@ -9,7 +9,7 @@ import Ducks from '../assets/images/Ducks.jpeg'
 const Projects = () => (
     <div className="bg-gray-200 min-h-screen flex flex-col">
         <NavBar />
-        <div className="flex flex-grow flex-col justify-center items-center">
+        <div className="flex flex-grow flex-col justify-center items-center m-2 md:m-0">
             <Project 
                 title="PhotoEdits" 
                 description="Photo manipulation software inspired by applications like Photoshop and Photopea. Performs image manipulations through a user interface on the browser."
