@@ -5,7 +5,7 @@ import BlogPostCard from '../components/BlogPostCard';
 
 const Board = () => (
     <div className="flex flex-col">
-        <div className="flex flex-grow flex-col justify-center items-center">
+        <div className="flex flex-grow flex-col items-center">
             {BlogPosts.map(blogpost => (
                 <BlogPostCard key={blogpost.id}
                     id={blogpost.id}
