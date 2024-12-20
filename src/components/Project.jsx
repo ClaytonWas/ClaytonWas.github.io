@@ -8,7 +8,7 @@ const Project = ({title, description, picture, html_link}) => (
                 <p className="text-l mt-2 mb-0 ml-1 md:mb-1">{description}</p>
             </div>
             <div className="w-full h-32 flex justify-end md:h-auto md:w-1/4 mt-4 md:mt-0">
-                <img src={picture} alt="Project Image" className="object-cover h-full md:h-full rounded-xl border-2 border-gray-700 group-hover:border-gray-500" />
+                <img src={picture} alt="Project Image" className="object-cover h-full md:h-full rounded-xl border-4 border-gray-700 md:border-2 group-hover:border-gray-500" />
             </div>
         </Link>
     </div>
