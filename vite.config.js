@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  server: {
+    historyApiFallback: true, // route fallback to keep things inside react/vite directly instead of popping .htmls everywhere.
+  },
 })
