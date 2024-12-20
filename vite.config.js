@@ -13,5 +13,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/old-path/, '/new-path'),
       },
     },
+    // This ensures that Vite handles 404 routes properly and falls back to index.html
+    historyApiFallback: true,
   },
-})
+});
