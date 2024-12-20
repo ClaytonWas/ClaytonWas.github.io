@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import './styles.css';
 import Projects from './pages/projects'
 import Contact from './pages/contact'
@@ -12,8 +11,8 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:id" element={<BlogPost />} />
     </Routes>
   </Router>
