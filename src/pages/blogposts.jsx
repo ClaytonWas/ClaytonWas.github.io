@@ -9,8 +9,8 @@ const BlogPosts = [
         description: 'Understanding how my website and blog posts function.',
         content: (
             <div className='bg-gray-200 min-h-screen flex flex-col'>
-                <p className='text-base md:text-xl lg:text-2xl font-medium break-words md:mb-10 md:mt-10 md:ml-10 lg:mt-20 lg:ml-20 xl:ml-60'>How Do I Navigate This Website?</p>
-                <div className='mx-auto flex flex-col items-center sm:w-5/6 md:w-3/4 lg:w-1/2'>
+                <p className='text-base font-medium break-words md:text-xl md:mb-10 md:mt-10 md:ml-10 lg:text-2xl lg:mt-20 lg:ml-20 xl:ml-60'>How Do I Navigate This Website?</p>
+                <div className='mx-auto flex flex-col items-center p-4 l-2 sm:w-5/6 md:p-0 md:w-3/4 lg:w-1/2'>
                     <p>
                         This post serves to function more as a proof of concept for future blogs. 
                         The goal of it was to set up a suitable blog page that allows for easy post creation and customization on my end and concise interactions on yours. If you think something about this website isn't working or sucks, feel free to contact me about it.
