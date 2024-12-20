@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Post = ({id, title, tag, description, picture}) => (
-    <div className="bg-gray-300 max-w-screen-md p-2 mb-10 w-2/3 rounded-2xl group border-2 border-gray-700 hover:border-gray-500">
+    <div className="bg-gray-300 max-w-screen-md p-2 mb-10 w-2/3 rounded-2xl group border-4 border-gray-700 md:border-2 hover:border-gray-500">
         <Link to={`/blog/${id}`} className="flex">
             <div className={`break-words m-1 ${picture ? "w-3/4" : "w-full"}`}>
                 <p className="text-2xl font-medium group-hover:text-sky-800">{title}</p>
@@ -16,13 +16,9 @@ const Post = ({id, title, tag, description, picture}) => (
                 <p className="text-l mt-1 mb-1 ml-1">{description}</p>
             </div>
             {picture && (
-                <div className="w-1/4">
-                    <img 
-                        src={picture} 
-                        alt="Project Image" 
-                        className="object-cover w-full h-full rounded-xl border-2 border-gray-700 group-hover:border-gray-500"
-                    />
-                </div>  
+                <div className="w-full h-32 flex justify-end md:h-auto md:w-1/4 mt-4 md:mt-0">
+                    <img src={picture} alt="Project Image" className="object-cover h-full md:h-full rounded-xl border-4 border-gray-700 md:border-2 group-hover:border-gray-500" />
+                </div>
             )}
         </Link>
     </div>
