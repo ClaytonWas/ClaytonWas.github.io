@@ -10,8 +10,8 @@ const NavList = () => (
 
 const Name = () => (
     <div className="flex-col cursor-default">
-      <p className="text-9xl">Clayton</p>
-      <p className="text-6xl">Wasmund</p>
+      <p className="text-6xl md:text-9xl">Clayton</p>
+      <p className="text-4xl md:text-6xl">Wasmund</p>
     </div>
 );
 
