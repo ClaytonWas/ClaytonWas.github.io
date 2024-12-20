@@ -17,8 +17,8 @@ const BlogPosts = [
                     </p>
                     <br />
                     <p>
-                        In the case you clicked on this post because you were genuinely curious about how to navigate this website... This website has two interactive subpages, Projects and Blogs.
-                        The ladder of which, this is the first entry in.
+                        In the case you clicked on this post because you would like to understand how to navigate this website.
+                        There are two seperate components on this website that will be updated semi-frequently. <p className='font-bold'>Projects</p>, and <p className='font-bold'>Blogs</p>. The ladder of which, this is the first entry in.
                     </p>
                     <p>
                         Each project and blog post will be accessible through a post component that will give you a general preview of the content included.
