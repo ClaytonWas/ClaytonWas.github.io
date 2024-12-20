@@ -26,7 +26,7 @@ const Hero = () => (
 const Contact = () => (
     <div className="bg-gray-200 min-h-screen flex flex-col">
         <NavBar />
-        <div className="flex flex-grow relative top-40 md:top-0 md:items-center justify-center">
+        <div className="flex flex-grow md:items-center justify-center">
           <Hero />
         </div>
     </div>

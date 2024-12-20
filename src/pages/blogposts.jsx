@@ -42,7 +42,7 @@ const BlogPosts = [
                     </div>
                     <br />
                     <p>
-                        For blogs, these posts will consist of a single overarching tag as well, this should help when the title of the post is ambiguious.
+                        For blogs, these posts will consist of a single overarching tag as well. This should help when the title of the post is ambiguious.
                         The primary purpose of this blog section will be to give updates on projects I am working on. 
                         But it will defintely also be used to talk about things I find cool.
                         These will largely be about music, games, and movies I like.
