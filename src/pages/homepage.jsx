@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
 
 const NavList = () => (
-    <div className="flex-row">
-        <Link to="/projects"><p className="text-2xl hover:text-sky-800 cursor-pointer">Projects</p></Link>
-        <Link to="/blog"><p className="text-2xl hover:text-sky-800 cursor-pointer">Blog</p></Link>
-        <Link to="/contact"><p className="text-2xl hover:text-sky-800 cursor-pointer">Contact</p></Link>
+    <div className="flex-row m-2">
+        <Link to="/projects"><p className="text-5xl md:text-3xl hover:text-sky-800 cursor-pointer">Projects</p></Link>
+        <Link to="/blog"><p className="text-5xl md:text-3xl hover:text-sky-800 cursor-pointer">Blog</p></Link>
+        <Link to="/contact"><p className="text-5xl md:text-3xl hover:text-sky-800 cursor-pointer">Contact</p></Link>
   </div>
 );
 
 const Name = () => (
-    <div className="flex-col cursor-default">
+    <div className="flex-col cursor-default m-2 text-center absolute left-0 top-0 md:left-1/4 md:top-1/4 md:text-start md:justify-end md:items-end">
       <p className="text-6xl md:text-9xl">Clayton</p>
-      <p className="text-4xl md:text-6xl">Wasmund</p>
+      <p className="text-5xl md:text-6xl md:ml-2">Wasmund</p>
     </div>
 );
 
 const Grid = () => (
-  <div className="grid grid-cols-6 grid-rows-6 gap-4 min-h-screen max-h-screen">
-    <div className="col-start-1 row-start-1 md:col-start-2 md:row-start-2 xl:col-start-3 xl:row-start-3">
+  <div className="h-screen">
+    <div className="flex">
       <Name />
     </div>
-    <div className="col-start-6 row-start-5 md:col-start-4 md:row-start-4 lg:col-start-5 2xl:col-start-4">
+    <div className="flex justify-end items-end absolute bottom-0 right-0 md:bottom-1/4 md:right-1/4">
       <NavList />
     </div>
   </div>
