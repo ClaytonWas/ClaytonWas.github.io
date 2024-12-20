@@ -7,6 +7,11 @@ export default defineConfig({
     react(),
   ],
   server: {
-    historyApiFallback: true, // route fallback to keep things inside react/vite directly instead of popping .htmls everywhere.
+    proxy: {
+      '/old-path': {
+        target: 'http://wasmund.ca', // Your destination URL
+        rewrite: (path) => path.replace(/^\/old-path/, '/new-path'),
+      },
+    },
   },
 })
